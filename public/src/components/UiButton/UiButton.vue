@@ -26,16 +26,22 @@ const props = withDefaults(defineProps<IProps>(), {
   justify-content: center;
   height: 40px;
   padding: 16px 32px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
-  color: var(--color-white);
-  background: var(--color-primary);
+  color: #ff8c00;
+  background: #8a2be2;
+  border: 2px solid #32cd32;
   border-radius: 16px;
 
-  &[data-layout='secondary'] {
-    color: var(--color-primary);
-    background-color: var(--color-transparent);
-    border-color: var(--color-primary);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
+}
+
+&[data-layout='secondary'] {
+  color: #ff8c00;
+  background-color: transparent;
+  border-color: #32cd32;
 }
 </style>
